@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main() {
-    int n1, n2, max;
+    int num1, num2, max;
     printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
+    scanf("%d %d", &num1, &num2);
 
-    // maximum number between n1 and n2 is stored in min
-    max = (n1 > n2) ? n1 : n2;
+    // maximum number between num1 and num2 is stored in max
+    max = (num1 > num2) ? num1 : num2;
 
     while (1) {
-        if (max % n1 == 0 && max % n2 == 0) {
-            printf("The LCM of %d and %d is %d.", n1, n2, max);
+        if (max % num1 == 0 && max % num2 == 0) {
+            printf("The LCM of %d and %d is %d.", num1, num2, max);
             break;
         }
         ++max;

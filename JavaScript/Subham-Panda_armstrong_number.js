@@ -1,17 +1,17 @@
-let number = prompt("Enter a positive integer");
-let numberOfDigits = number.length;
-let sum = 0;
-let temp = number;
+let num = prompt("Enter a positive integer");
+let numberOfDigits = num.length;
+let s= 0;
+let temp = num;
 
 while (temp > 0) {
 
     let remainder = temp % 10;
-    sum += remainder ** numberOfDigits;
+    s+= remainder ** numberOfDigits;
     temp = parseInt(temp / 10); 
 }
-if (sum == number) {
-    console.log(`${number} is an Armstrong number`);
+if (s == num) {
+    console.log(`${num} is an Armstrong number`);
 }
 else {
-    console.log(`${number} is not an Armstrong number.`);
+    console.log(`${num} is not an Armstrong number.`);
 }

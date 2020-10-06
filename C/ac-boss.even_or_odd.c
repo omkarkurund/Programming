@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-	int n;
+	int num;
 	printf("Enter your number:");
-	scanf("%d", &n);
-	if(n&1)
-	{
-		printf("The number is odd\n");
-	}
-	else
-	{
-		printf("The number is even\n");
-	}
+	scanf("%d", &num);
+	/*If number is divisible by 2 then number 
+    is EVEN otherwise number is ODD*/
+ 
+    if(num%2==0)
+        printf("%d is an EVEN number:",num);
+    else
+        printf("%d is an ODD number:",num);
+ 
 	return 0;
 }
